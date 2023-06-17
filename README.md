@@ -143,18 +143,11 @@ nrow(trips_)= 5858483
 trips_$date <- as.Date(trips_$started_at) #The default format is yyyy-mm-dd
 trips_$month_year <- format(as.Date(trips_$started_at), " %Y-%m")
 trips_$day_of_week <- format(as.Date(trips_$date), "%A")
-
 trips_$day <- format(as.Date(trips_$date), "%d")
-
 
 
 # Inspect the structure of the columns
 str(trips_)
-
-
-
-
-
 
 
 Upon inspection we can see that column such as months, day and day of week are in character class of which is not ideal for statistical 
