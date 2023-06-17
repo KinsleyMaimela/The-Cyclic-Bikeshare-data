@@ -1,7 +1,13 @@
+#Google Data Analytics: Capstone Projeet
+![dataset-cover](https://github.com/KinsleyMaimela/The-Cyclic-Bikeshare-data/assets/134984278/326136e1-a9f1-49e8-9c1c-8fe86d2ec47c)
+
+_This analysis is an optional Capstone project from the Google Data Analytics Professional Certificate on Coursera._
+
+
 # The-Cyclic-Bikeshare-data
-# # # # # # # # # # # # # # # # # # # # # # # ###
-# ##<<__Install & load required packages__>>####
-# # # # # # # # # # # # # # # # # # # # # # # ##
+
+**#<<__Install & load required packages__>>
+**
 
 install.packages("data.table")# For loading and subsequently, combining the spreadsheets conveniently( and efficiently).
 install.packages("readr")    # For reading the spreadsheets
@@ -103,6 +109,7 @@ nrow(trips_)
 
 
 trips_$trip_length <- difftime(trips_$ended_at, trips_$started_at, units = "hours")
+![5e412802e8a6bf79ebff0083_Bike Rental](https://github.com/KinsleyMaimela/The-Cyclic-Bikeshare-data/assets/134984278/1961610d-a930-4dd3-a8f7-2a598d06a7ac)
 
 df <- arrange(df, column_name) 
 trips_<- arrange(trips_, trip_length)
@@ -151,10 +158,13 @@ str(trips_)
 
 
 Upon inspection we can see that column such as months, day and day of week are in character class of which is not ideal for statistical 
+
+Since Tableu is known for its user friendliness in creating aesthetically pleasing visualization I chose to write the cleaned data to csv file for subsequent visualization in Tablaeu
 # Specify the file path and name for the CSV file 
  csv_file <- "trips_data.csv"
  # Write the data frame to a CSV file 
 write.csv(trips_, file = csv_file, row.names = FALSE) 
 # Print a message to confirm the CSV file creation
  cat("CSV file created:", csv_file, "\n")
+![BIKE](https://github.com/KinsleyMaimela/The-Cyclic-Bikeshare-data/assets/134984278/f4f62818-8336-4c76-b9e5-6f1962370af8)
 
