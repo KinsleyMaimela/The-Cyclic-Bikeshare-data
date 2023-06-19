@@ -158,3 +158,6 @@ write.csv(trips_, file = csv_file, row.names = FALSE)
 # Print a message to confirm the CSV file creation
  cat("CSV file created:", csv_file, "\n")
 
+ ![Two Rulers](https://github.com/KinsleyMaimela/The-Cyclic-Bikeshare-data/assets/134984278/aaa0403e-dbe4-4702-a75a-9717c7a6ee7f)
+
+
